@@ -1,0 +1,128 @@
+
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+    --transition: all 0.3s ease;
+}
+
+body {
+    padding-top: 76px;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 75vh; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-img {
+    max-width: 70%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-img:hover {
+    transform: scale(1.05);
+  }
+  
+.feature-card {
+    transition: var(--transition);
+    border-radius: 15px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+}
+
+.feature-icon {
+    transition: var(--transition);
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
+}
+
+.testimonial-card {
+    transition: var(--transition);
+    border-radius: 15px;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1) !important;
+}
+
+.avatar-placeholder {
+    width: 50px;
+    height: 50px;
+    font-size: 1.1rem;
+}
+
+.pricing-card {
+    transition: var(--transition);
+    border-radius: 15px;
+    /* overflow: hidden; */
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+}
+
+.pricing-card .card-header {
+    border: none;
+}
+
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding: 2rem 0;
+    }
+    
+    .hero-section .d-flex {
+        justify-content: center;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    body {
+        padding-top: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .display-5 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-image-placeholder {
+        padding: 2rem 1rem;
+        min-height: 200px;
+    }
+}
+
+#themeToggle {
+    transition: var(--transition);
+}
+
+.btn:focus,
+.nav-link:focus {
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+

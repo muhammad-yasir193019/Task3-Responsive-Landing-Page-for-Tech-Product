@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page for a Tech-Product</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-theme="light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">PulsePods</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cta">Start Trial</a></li>
+                    <li class="nav-item ms-2">
+                        <button id="themeToggle" class="btn btn-outline-secondary btn-sm" aria-pressed="false"
+                            title="Toggle theme">
+                            <i class="bi bi-moon-fill" id="themeIcon" aria-hidden="true"></i>
+                            <span class="visually-hidden">Toggle theme</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section pb-5 pt-5">
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <!-- Left Content -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <h1 class="display-5 fw-bold">PulsePods - Studio sound, pocket-sized</h1>
+              <p class="lead text-muted mb-4">Active noise cancelation, 40+ hours of battery, crystal clear calls,
+                built for everyday life.</p>
+      
+              <div class="d-flex mb-3 gap-2 flex-wrap">
+                <a href="#pricing" class="btn btn-primary btn-lg">Starting from $20</a>
+                <a href="#features" class="btn btn-outline-secondary btn-lg">See features</a>
+              </div>
+      
+              <ul class="list-unstyled text-muted small">
+                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Dust, sweat & water resistant</li>
+                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Wireless Charging and multipoint</li>
+                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>30-day money-back guarantee</li>
+              </ul>
+            </div>
+      
+            <div class="col-lg-6 text-center">
+              <img src="hero.jpg" alt="PulsePods Product" 
+              class="img-fluid rounded shadow-lg hero-img">
+            </div>
+          </div>
+        </div>
+      </header>
+      
+
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-6 fw-bold mb-3">Why Choose PulsePods?</h2>
+                    <p class="lead text-muted">Experience audio like never before with our cutting-edge technology</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="bi bi-volume-up display-4 text-primary"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Active Noise Cancelation</h5>
+                            <p class="card-text text-muted">Immerse yourself in music with advanced noise canceling
+                                technology that blocks out distractions.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="bi bi-battery-full display-4 text-primary"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">40+ Hour Battery</h5>
+                            <p class="card-text text-muted">Enjoy all-day listening with our extended battery life and
+                                quick charging capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="bi bi-droplet display-4 text-primary"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Water Resistant</h5>
+                            <p class="card-text text-muted">IPX7 rating ensures your PulsePods can handle sweat and rain
+                                during workouts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-6 fw-bold mb-3">What our customers say</h2>
+                    <p class="lead text-muted">Join our satisfied customers</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card testimonial-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center ,mb-3">
+                                <div
+                                    class="avatar-placeholder bg-primary d-flex align-items-center justify-content-center rounded-circle me-3">
+                                    <span class="text-white fw-bold">DP</span>
+                                </div>
+
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Dustin-Porrier</h6>
+                                    <small class="text-muted">Audio Engineer</small>
+                                </div>
+                            </div>
+
+                            <p class="text">The sound quality is exceptional. As an audio engineer I'm impressed by the
+                                clarity of the
+                                sound these earbuds provide.
+                            </p>
+
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card testimonial-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center ,mb-3">
+                                <div
+                                    class="avatar-placeholder bg-primary d-flex align-items-center justify-content-center rounded-circle me-3">
+                                    <span class="text-white fw-bold">JG</span>
+                                </div>
+
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Justin-Gathje</h6>
+                                    <small class="text-muted">Fitness Entuasist</small>
+                                </div>
+                            </div>
+
+                            <p class="text">Perfect for the workouts. The battery timing is perfect it lasts as long as
+                                my training sessions.
+
+                            </p>
+
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card testimonial-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center ,mb-3">
+                                <div
+                                    class="avatar-placeholder bg-primary d-flex align-items-center justify-content-center rounded-circle me-3">
+                                    <span class="text-white fw-bold">CO</span>
+                                </div>
+
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Charles-Olivera</h6>
+                                    <small class="text-muted">Traveller</small>
+                                </div>
+                            </div>
+
+                            <p class="text">Exceptional quality. Perfect for outdoor and other enviornments due to its
+                                dust,
+                                sweat amd water-resistance.
+                            </p>
+
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-6 fw-bold mb-3">Choose Your Perfect Fit</h2>
+                    <p class="lead text-muted">Flexible options for every need and budget</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center g-4">
+
+                <div class="col-md-4">
+                    <div class="card pricing-card h-100 border-0 shadow">
+                        <div class="card-header text-center py-4 bg-primary text-white">
+                            <h5 class="card-title mb-0 fw-bold">PulsePods Basic</h5>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <div class="price mb-3">
+                                <span class="h2 fw-bold">$20</span>
+                                <span class="text-muted">/one-time</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>20 hours battery</li>
+                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Basic sound quality</li>
+                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Sweat resistant</li>
+                                <li class="mb-2"><i class="bi bi-x text-muted me-2"></i>Noise cancellation</li>
+                                <li class="mb-2"><i class="bi bi-x text-muted me-2"></i>Wireless charging</li>
+                            </ul>
+                            <a href="#cta" class="btn btn-outline-primary w-100">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card pricing-card h-100 border-0 shadow-lg">
+                        <div class="card-header text-center py-4 bg-warning text-dark position-relative">
+                            <span class="badge bg-danger position-absolute top-0 start-50 translate-middle px-3">Most
+                                Popular</span>
+                            <h5 class="card-title mb-0 fw-bold">PulsePods Pro</h5>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <div class="price mb-3">
+                                <span class="h2 fw-bold">$45</span>
+                                <span class="text-muted">/one-time</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>40+ hours battery</li>
+                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Studio sound quality</li>
+                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Water & dust resistant
+                                </li>
+                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Active noise cancellation
+                                </li>
+                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Wireless charging</li>
+                            </ul>
+                            <a href="#cta" class="btn btn-warning w-100 fw-bold">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card pricing-card h-100 border-0 shadow">
+                        <div class="card-header text-center py-4 bg-dark text-white">
+                            <h5 class="card-title mb-0 fw-bold">PulsePods Premium</h5>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <div class="price mb-3">
+                                <span class="h2 fw-bold">$65</span>
+                                <span class="text-muted">/one-time</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>50+ hours battery</li>
+                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>3D spatial audio</li>
+                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Military-grade durability
+                                </li>
+                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Adaptive noise
+                                    cancellation</li>
+                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Fast wireless charging
+                                </li>
+                            </ul>
+                            <a href="#cta" class="btn btn-outline-dark w-100">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="cta" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="display-6 fw-bold mb-3">Ready to Experience Premium Sound?</h2>
+                    <p class="lead mb-4">Join thousands of satisfied customers and transform your audio experience
+                        today.</p>
+
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="#pricing" class="btn btn-light btn-lg fw-bold">Buy Now</a>
+                        <a href="#features" class="btn btn-outline-light btn-lg">Learn More</a>
+                    </div>
+
+                    <div class="mt-4">
+                        <small class="text-light">
+                            <i class="bi bi-shield-check me-1"></i>30-day money-back guarantee • Free shipping • 2-year
+                            warranty
+                        </small>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 PulsePods. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
